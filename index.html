@@ -7,21 +7,39 @@
 <meta charset="UTF-8">
 <title>Hangman-Game</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
+	<header class="container">
 
-	<h1>Hangman-Game</h1>
-	<p>Wins: </p>
-	<p id="wins">Wins: </p>
-	<p>Current Word: </p>
-	<p id="current-word"></p>
-	<p>Number of Guesses Remaining: </p>
-	<p id="remaining"></p>
-	<p>Letters already Guessed: </p>
-	<p id="guessed"></p>
+		<div class="row">
+			<div id="heading" class="col-md-12">
+				<h1 class="fade">Hangman-Game</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="game">
+					<p id="started">Press any key to get started!</p><br>
+					<p>Wins: </p>
+					<p id="wins">Wins: </p><br>
+					<p>Current Word: </p><br>
+					<p id="current-word"></p><br>
+					<p>Number of Guesses Remaining: </p>
+					<p id="remaining"></p>
+					<p>Letters already Guessed: </p>
+					<p id="guessed"></p> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 
 <script type="text/javascript" src="assets/javascript/game.js"> </script> 
